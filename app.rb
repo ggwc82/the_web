@@ -19,5 +19,6 @@ get '/onthego' do
 end
 
 get '/cat' do
+  @pic_name = %w(Amigo Oscar Viking).sample
   erb(:index)
 end
