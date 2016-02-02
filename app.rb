@@ -1,12 +1,12 @@
 require 'sinatra'
 
-set :session_secret, 'super secret' 
+set :session_secret, 'super secret'
 
 get '/' do
   "Hello World!!!"
 end
 
-get '/secret' do 
+get '/secret' do
  "<h1> Secret!! </h1>"
 end
 
@@ -19,7 +19,5 @@ get '/onthego' do
 end
 
 get '/cat' do
-  '<div style="border: dashed 3px red;">
-  <img src="http://bit.ly/1eze8aE">
-  </div>'
+  erb(:index)
 end
