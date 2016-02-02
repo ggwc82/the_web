@@ -1,5 +1,7 @@
 require 'sinatra'
 
+set :session_secret, 'super secret' 
+
 get '/' do
   "Hello World!!!"
 end
@@ -13,5 +15,5 @@ get '/shotgun' do
 end
 
 get '/onthego' do
-  'Change on the go!'
+  'on the go!'
 end
