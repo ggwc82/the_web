@@ -17,3 +17,9 @@ end
 get '/onthego' do
   'on the go!'
 end
+
+get '/cat' do
+  '<div style="border: dashed 3px red;">
+  <img src="http://bit.ly/1eze8aE">
+  </div>'
+end
